@@ -1,5 +1,9 @@
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import dotenv from "dotenv";
+import webpack from "webpack";
+
+dotenv.config({ path: path.resolve(import.meta.dirname, '.env') });
 
 export default {
   entry: "./src/index.js",
@@ -12,13 +16,16 @@ export default {
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
+    new webpack.DefinePlugin({
+      "process.env.API_KEY": JSON.stringify(process.env.API_KEY),
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.html$/i,
         use: ["html-loader"],
-      },
+      },  
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
