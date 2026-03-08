@@ -1,5 +1,5 @@
 {
-  "name": "odin-template",
+  "name": "odin-weather-forecast",
   "version": "1.0.0",
   "type": "module",
   "description": "",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devoid-of-thought/odin-template.git"
+    "url": "git+https://github.com/devoid-of-thought/odin-weather-forecast.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devoid-of-thought/odin-template/issues"
+    "url": "https://github.com/devoid-of-thought/odin-weather-forecast/issues"
   },
-  "homepage": "https://github.com/devoid-of-thought/odin-template#readme",
+  "homepage": "https://github.com/devoid-of-thought/odin-weather-forecast#readme",
   "devDependencies": {
     "css-loader": "^7.1.4",
     "dotenv": "^17.3.1",
