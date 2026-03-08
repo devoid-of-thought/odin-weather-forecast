@@ -340,7 +340,7 @@ function createPercipitationInfo(parsedWeatherData) {
     const percentPrecipitationDiv = document.createElement("div");
     percentPrecipitationDiv.classList.add("percent-precipitation-div");
     const percentPrecipitationHeader = document.createElement("h2");
-    percentPrecipitationHeader.textContent = "Precipitation Chance:";
+    percentPrecipitationHeader.textContent = "Current Precipitation:";
     const percentPrecipitation = document.createElement("p");
     percentPrecipitation.textContent = `${parsedWeatherData.currentPercentPrecipitation}%`;
     percentPrecipitationDiv.appendChild(percentPrecipitationHeader);
